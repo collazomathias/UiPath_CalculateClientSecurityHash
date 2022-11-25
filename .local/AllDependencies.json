@@ -3560,7 +3560,7 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "UiPath/22.10.46.47635": {
+      "UiPath/22.10.48.42744": {
         "type": "package",
         "compile": {
           "lib/net6.0-windows7.0/_._": {}
@@ -4146,12 +4146,12 @@
           }
         }
       },
-      "UiPath.UIAutomation.Activities/22.10.3": {
+      "UiPath.UIAutomation.Activities/22.11.0-preview": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
           "System.IO.Abstractions": "3.0.10",
-          "UiPath": "[22.10.46.47635]",
+          "UiPath": "[22.10.48.42744]",
           "UiPath.Activities.RuntimeGovernance": "1.1.6",
           "UiPath.ImageProcessing": "22.4.1",
           "UiPath.OCR.Activities": "3.11.0",
@@ -7895,7 +7895,7 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "UiPath/22.10.46.47635": {
+      "UiPath/22.10.48.42744": {
         "type": "package",
         "compile": {
           "lib/net6.0-windows7.0/_._": {}
@@ -8481,12 +8481,12 @@
           }
         }
       },
-      "UiPath.UIAutomation.Activities/22.10.3": {
+      "UiPath.UIAutomation.Activities/22.11.0-preview": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
           "System.IO.Abstractions": "3.0.10",
-          "UiPath": "[22.10.46.47635]",
+          "UiPath": "[22.10.48.42744]",
           "UiPath.Activities.RuntimeGovernance": "1.1.6",
           "UiPath.ImageProcessing": "22.4.1",
           "UiPath.OCR.Activities": "3.11.0",
@@ -16463,10 +16463,10 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "UiPath/22.10.46.47635": {
-      "sha512": "nE7o6aZohuV1ED+jFSUSa6zx3GO3kK2iXt/8Mp5HgOcKeJ0GJrjZVEv14hAcSyQERkukap9amPMj1fk9K5z4mg==",
+    "UiPath/22.10.48.42744": {
+      "sha512": "IsSMOKMIRDL3bfPMrCfXMdtKZ70TJBHm6c5w7UPhOhcuHgkXm4A+E1NrEkFL6+Rphm2vNCesv+djBty3Xu8BuQ==",
       "type": "package",
-      "path": "uipath/22.10.46.47635",
+      "path": "uipath/22.10.48.42744",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -16530,7 +16530,7 @@
         "lib/net45/UiPath.Interop.dll",
         "lib/net5.0-windows7.0/UiPath.Interop.dll",
         "lib/net6.0-windows7.0/UiPath.Interop.dll",
-        "uipath.22.10.46.47635.nupkg.sha512",
+        "uipath.22.10.48.42744.nupkg.sha512",
         "uipath.nuspec"
       ]
     },
@@ -17337,10 +17337,10 @@
         "uipath.testing.activities.nuspec"
       ]
     },
-    "UiPath.UIAutomation.Activities/22.10.3": {
-      "sha512": "CvDWf6fGcg5Xhw7SOv1Rv84gNve41QydwnEGywgnDkpJt7oEFJt8RdqnGv104HVlQOzz1RXdJ6Mbusx455r2+w==",
+    "UiPath.UIAutomation.Activities/22.11.0-preview": {
+      "sha512": "SncP1JjAct7PZC6YnhcNhjyuvGN8Nl3mjgqYtVZbIvnOPcQ+yattxgd2AU0mAGqU0l+hYODdnTe7RNVLFcMu+g==",
       "type": "package",
-      "path": "uipath.uiautomation.activities/22.10.3",
+      "path": "uipath.uiautomation.activities/22.11.0-preview",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -17776,7 +17776,7 @@
         "lib/net6.0/zh-CN/UiPath.UIAutomationNext.Activities.Design.resources.dll",
         "lib/net6.0/zh-CN/UiPath.UIAutomationNext.Activities.resources.dll",
         "lib/net6.0/zu/UiPath.UIAutomationNext.Activities.resources.dll",
-        "uipath.uiautomation.activities.22.10.3.nupkg.sha512",
+        "uipath.uiautomation.activities.22.11.0-preview.nupkg.sha512",
         "uipath.uiautomation.activities.nuspec"
       ]
     },
@@ -18025,19 +18025,19 @@
       "UiPath.Excel.Activities >= 2.16.0 <= 2.16.0",
       "UiPath.System.Activities >= 22.10.3 <= 22.10.3",
       "UiPath.Testing.Activities >= 22.10.0 <= 22.10.0",
-      "UiPath.UIAutomation.Activities >= 22.10.3 <= 22.10.3"
+      "UiPath.UIAutomation.Activities >= 22.11.0-preview <= 22.11.0-preview"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mathias.collazo\\.nuget\\packages\\": {}
+    "C:\\Users\\Mathi\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "CalculateClientSecurityHash",
       "projectName": "CalculateClientSecurityHash",
-      "projectPath": "C:\\Users\\mathias.collazo\\Desktop\\UiPath_CalculateClientSecurityHash-main\\.local",
-      "packagesPath": "C:\\Users\\mathias.collazo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mathias.collazo\\Desktop\\UiPath_CalculateClientSecurityHash-main\\.local"
+      "projectPath": "C:\\Users\\Mathi\\Desktop\\UiPath_CalculateClientSecurityHash\\.local",
+      "packagesPath": "C:\\Users\\Mathi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mathi\\Desktop\\UiPath_CalculateClientSecurityHash\\.local"
     },
     "frameworks": {
       "net6.0-windows7.0": {
@@ -18060,10 +18060,10 @@
           "UiPath.UIAutomation.Activities": {
             "include": "Runtime",
             "target": "Package",
-            "version": "[22.10.3, 22.10.3]"
+            "version": "[22.11.0-preview, 22.11.0-preview]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\mathias.collazo\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\Mathi\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
       }
     },
     "runtimes": {

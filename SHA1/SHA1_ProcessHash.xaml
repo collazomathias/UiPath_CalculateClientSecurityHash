@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>652.6666666666666,3151.3333333333335</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>866,3142</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>SHA1_ProcessHash_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="34">
@@ -49,7 +49,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="44">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="88">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>System.Private.CoreLib</AssemblyReference>
@@ -93,27 +93,28 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
       <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SHA1_ProcessHash" sap:VirtualizedContainerService.HintSize="662.6666666666666,3086.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SHA1_ProcessHash" sap:VirtualizedContainerService.HintSize="663,3077" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Sequence SHA1_ProcessHash" sap:VirtualizedContainerService.HintSize="620.6666666666666,2996.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Sequence SHA1_ProcessHash" sap:VirtualizedContainerService.HintSize="621,2987" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:BrowserScope SearchScope="{x:Null}" TimeoutMS="{x:Null}" Browser="[io_SHA1BrowserSession]" BrowserType="Edge" DisplayName="Attach Browser 'msedge.exe SHA1 online'" sap:VirtualizedContainerService.HintSize="558.6666666666666,1328" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="ab85477766cb04585b2123234b69567e" Selector="&lt;html app='msedge.exe' title='SHA1 online' /&gt;" UiBrowser="[io_SHA1BrowserSession]">
+      <ui:BrowserScope SearchScope="{x:Null}" TimeoutMS="{x:Null}" Browser="[io_SHA1BrowserSession]" BrowserType="Chrome" DisplayName="Attach Browser 'msedge.exe SHA1 online'" sap:VirtualizedContainerService.HintSize="559,1318" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="ab85477766cb04585b2123234b69567e" Selector="&lt;html app='msedge.exe' title='SHA1 online' /&gt;" UiBrowser="[io_SHA1BrowserSession]">
         <ui:BrowserScope.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="524.6666666666666,1172" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="524,1162" sap2010:WorkflowViewState.IdRef="Sequence_8">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:Boolean" Name="vBooSHA1PageExist" />
               </Sequence.Variables>
@@ -122,9 +123,9 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:UiElementExists DisplayName="Element exist SHA1 Title" Exists="[vBooSHA1PageExist]" sap:VirtualizedContainerService.HintSize="482.6666666666667,116" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+              <ui:UiElementExists DisplayName="Element exist SHA1 Title" Exists="[vBooSHA1PageExist]" sap:VirtualizedContainerService.HintSize="482,116" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
                 <ui:UiElementExists.Target>
-                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a438cbff-e1fa-421f-91a8-9aae5f2939f0" InformativeScreenshot="3c6f20b8ea854fdd4f3d2171229e40c8" Selector="&lt;webctrl tag='H1' /&gt;">
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a438cbff-e1fa-421f-91a8-9aae5f2939f0" InformativeScreenshot="4b18254303e1bdf25f4144153bfd8a30" Selector="&lt;html app='chrome.exe' title='SHA1 online' /&gt;&lt;webctrl tag='H1' /&gt;">
                     <ui:Target.TimeoutMS>
                       <InArgument x:TypeArguments="x:Int32" />
                     </ui:Target.TimeoutMS>
@@ -134,17 +135,17 @@
                   </ui:Target>
                 </ui:UiElementExists.Target>
               </ui:UiElementExists>
-              <If Condition="[vBooSHA1PageExist]" sap:VirtualizedContainerService.HintSize="482.6666666666667,926" sap2010:WorkflowViewState.IdRef="If_2">
+              <If Condition="[vBooSHA1PageExist]" sap:VirtualizedContainerService.HintSize="482,916" sap2010:WorkflowViewState.IdRef="If_2">
                 <If.Then>
-                  <Sequence sap:VirtualizedContainerService.HintSize="400,568" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <Sequence sap:VirtualizedContainerService.HintSize="400,566" sap2010:WorkflowViewState.IdRef="Sequence_6">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT  textToHashId'" sap:VirtualizedContainerService.HintSize="358,166" sap2010:WorkflowViewState.IdRef="SetValue_2" Text="[in_HashFormula]">
+                    <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT  textToHashId'" sap:VirtualizedContainerService.HintSize="358,164" sap2010:WorkflowViewState.IdRef="SetValue_3" Text="[in_HashFormula]">
                       <ui:SetValue.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6a1ef98a-b0f6-44c0-9e23-a11ea283b0fc" InformativeScreenshot="4f0f79bec93482d02bd96bf81c663cc7" Selector="&lt;webctrl id='textToHashId' tag='INPUT' /&gt;">
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5e812348-457f-4f19-94a3-b2ea2b8324ae" InformativeScreenshot="2a5a39d77bb21739d686bb749543498d" Selector="&lt;html app='chrome.exe' title='SHA1 online' /&gt;&lt;webctrl id='textToHashId' tag='INPUT' /&gt;">
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
                           </ui:Target.TimeoutMS>
@@ -154,7 +155,7 @@
                         </ui:Target>
                       </ui:SetValue.Target>
                     </ui:SetValue>
-                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT'" sap:VirtualizedContainerService.HintSize="358,116" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT'" sap:VirtualizedContainerService.HintSize="358,116" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
                       <ui:Click.CursorPosition>
                         <ui:CursorPosition Position="Center">
                           <ui:CursorPosition.OffsetX>
@@ -166,7 +167,7 @@
                         </ui:CursorPosition>
                       </ui:Click.CursorPosition>
                       <ui:Click.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6cfe84b4-172c-48df-b91e-deaf626f926f" InformativeScreenshot="171d1f8687edf16ff67f6f0a39601387" Selector="&lt;html app='msedge.exe' title='SHA1 online' /&gt;&lt;webctrl tag='INPUT' type='submit' /&gt;">
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="52f2bbe0-4381-423c-b4ac-98384449c013" InformativeScreenshot="c3ebc041f2cbd605ab296a2261d1eea5" Selector="&lt;html app='chrome.exe' title='SHA1 online' /&gt;&lt;webctrl tag='INPUT' type='submit' /&gt;">
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
                           </ui:Target.TimeoutMS>
@@ -178,7 +179,7 @@
                     </ui:Click>
                     <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'SPAN  result-sha1'" sap:VirtualizedContainerService.HintSize="358,116" sap2010:WorkflowViewState.IdRef="GetValue_1">
                       <ui:GetValue.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="11293cc5-7209-4809-b57b-328f31f82a62" InformativeScreenshot="152dc39e892888fda353885935b19276" Selector="&lt;html app='msedge.exe' title='SHA1 online' /&gt;&lt;webctrl id='result-sha1' tag='SPAN' /&gt;">
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="11293cc5-7209-4809-b57b-328f31f82a62" InformativeScreenshot="cb584dabde1f0c6c6e61b671adc042d3" Selector="&lt;html app='chrome.exe' title='SHA1 online' /&gt;&lt;webctrl id='result-sha1' tag='SPAN' /&gt;">
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
                           </ui:Target.TimeoutMS>
@@ -194,13 +195,13 @@
                   </Sequence>
                 </If.Then>
                 <If.Else>
-                  <Sequence sap:VirtualizedContainerService.HintSize="400,188.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <Sequence sap:VirtualizedContainerService.HintSize="400,187" sap2010:WorkflowViewState.IdRef="Sequence_7">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Throw Exception="[new Exception(&quot;You are not in the SHA1 page.&quot;)]" sap:VirtualizedContainerService.HintSize="358,98.66666666666667" sap2010:WorkflowViewState.IdRef="Throw_2" />
+                    <Throw Exception="[new Exception(&quot;You are not in the SHA1 page.&quot;)]" sap:VirtualizedContainerService.HintSize="358,97" sap2010:WorkflowViewState.IdRef="Throw_2" />
                   </Sequence>
                 </If.Else>
               </If>

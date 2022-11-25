@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>728.6666666666666,1564</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>994,1556</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>System1_ExtractWIsDataTable_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="78">
@@ -107,25 +107,25 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="System1_ExtractWIsDataTable" sap:VirtualizedContainerService.HintSize="738.6666666666666,1499.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="System1_ExtractWIsDataTable" sap:VirtualizedContainerService.HintSize="738,1491" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Sequence System1_ExtractWIsDataTable" sap:VirtualizedContainerService.HintSize="696.6666666666666,1409.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Sequence System1_ExtractWIsDataTable" sap:VirtualizedContainerService.HintSize="696,1401" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:BrowserScope SearchScope="{x:Null}" TimeoutMS="{x:Null}" Browser="[io_System1BrowserSession]" BrowserType="Edge" DisplayName="Attach Browser 'msedge.exe ACME'" sap:VirtualizedContainerService.HintSize="634.6666666666666,1287.3333333333333" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="52baab8eaa0380bdc471e6bf7e62839f" Selector="&lt;html app='msedge.exe' title='ACME System 1 - Dashboard' /&gt;" UiBrowser="[io_System1BrowserSession]">
+      <ui:BrowserScope SearchScope="{x:Null}" TimeoutMS="{x:Null}" Browser="[io_System1BrowserSession]" BrowserType="Edge" DisplayName="Attach Browser 'msedge.exe ACME'" sap:VirtualizedContainerService.HintSize="634,1279" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="52baab8eaa0380bdc471e6bf7e62839f" Selector="&lt;html app='msedge.exe' title='ACME System 1 - Dashboard' /&gt;" UiBrowser="[io_System1BrowserSession]">
         <ui:BrowserScope.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="600.6666666666666,1131.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="600,1123" sap2010:WorkflowViewState.IdRef="Sequence_7">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:Boolean" Name="vBooWorkItemsExist" />
               </Sequence.Variables>
@@ -134,8 +134,8 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="558.6666666666666,68.66666666666667" sap2010:WorkflowViewState.IdRef="NavigateTo_1" Url="[in_System1URL + &quot;/work-items&quot;]" />
-              <ui:UiElementExists DisplayName="Element exist &quot;Work Items&quot; H1" Exists="[vBooWorkItemsExist]" sap:VirtualizedContainerService.HintSize="558.6666666666666,116" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+              <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="558,69" sap2010:WorkflowViewState.IdRef="NavigateTo_1" Url="[in_System1URL + &quot;/work-items&quot;]" />
+              <ui:UiElementExists DisplayName="Element exist &quot;Work Items&quot; H1" Exists="[vBooWorkItemsExist]" sap:VirtualizedContainerService.HintSize="558,116" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
                 <ui:UiElementExists.Target>
                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a438cbff-e1fa-421f-91a8-9aae5f2939f0" InformativeScreenshot="f4e3c5b143a24966d5527cf3bc98271c" Selector="&lt;webctrl tag='H1' /&gt;">
                     <ui:Target.TimeoutMS>
@@ -147,15 +147,15 @@
                   </ui:Target>
                 </ui:UiElementExists.Target>
               </ui:UiElementExists>
-              <If Condition="[vBooWorkItemsExist]" sap:VirtualizedContainerService.HintSize="558.6666666666666,776.6666666666666" sap2010:WorkflowViewState.IdRef="If_2">
+              <If Condition="[vBooWorkItemsExist]" sap:VirtualizedContainerService.HintSize="558,768" sap2010:WorkflowViewState.IdRef="If_2">
                 <If.Then>
-                  <Sequence sap:VirtualizedContainerService.HintSize="476,418.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <Sequence sap:VirtualizedContainerService.HintSize="476,416" sap2010:WorkflowViewState.IdRef="Sequence_8">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:ExtractData DelayBetweenPagesMS="{x:Null}" ContinueOnError="True" DataTable="[out_TransactionData]" DisplayName="Extract Structured Data 'TABLE'" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='WIID' attr='text' /&gt;&lt;column name='Description' attr='text' /&gt;&lt;column name='Type' attr='text' /&gt;&lt;column name='Status' attr='text' /&gt;&lt;column name='Date' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="ExtractData_1" MaxNumberOfResults="100" NextLinkSelector="&lt;webctrl aria-label='Next »' tag='A' /&gt;" SimulateClick="True">
+                    <ui:ExtractData DelayBetweenPagesMS="{x:Null}" ContinueOnError="True" DataTable="[out_TransactionData]" DisplayName="Extract Structured Data 'TABLE'" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='WIID' attr='text' /&gt;&lt;column name='Description' attr='text' /&gt;&lt;column name='Type' attr='text' /&gt;&lt;column name='Status' attr='text' /&gt;&lt;column name='Date' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="ExtractData_1" MaxNumberOfResults="0" NextLinkSelector="&lt;webctrl aria-label='Next »' tag='A' /&gt;" SimulateClick="True">
                       <ui:ExtractData.Target>
                         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="47137178-9ae4-45ef-bc10-030fb569d9b0" InformativeScreenshot="236dfd65120500be1064ec60c42a0ce5" Selector="&lt;webctrl tag='TABLE' /&gt;" WaitForReady="COMPLETE">
                           <ui:Target.TimeoutMS>
@@ -164,7 +164,7 @@
                         </ui:Target>
                       </ui:ExtractData.Target>
                     </ui:ExtractData>
-                    <ui:FilterDataTable DataTable="[out_TransactionData]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="434,172.66666666666666" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[out_TransactionData]" SelectColumnsMode="Keep">
+                    <ui:FilterDataTable DataTable="[out_TransactionData]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="434,170" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[out_TransactionData]" SelectColumnsMode="Keep">
                       <ui:FilterDataTable.Filters>
                         <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                           <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
